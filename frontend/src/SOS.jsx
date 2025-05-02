@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import supabase from "./supabaseClient";
 import emailjs from "@emailjs/browser";
 import Navbar from "./components/Navbar";
-// import "./Sos.css";
+import "./Sos.css";
 
 function Sos() {
   const [userLocation, setUserLocation] = useState(null);
