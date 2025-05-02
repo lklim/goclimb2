@@ -1,0 +1,112 @@
+.point-shop-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    /* padding: 80px 20px 20px; Added padding-top for fixed Navbar */
+    /* ^^^^THIS WAS UR NAVBAR ISSUE HANS^^^^^*/
+    /* can remove it uh */
+  }
+  
+  .point-shop-page h2 {
+    margin: 20px 0;
+    font-size: 28px;
+  }
+  
+  .point-balance {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  .shop-items-section,
+  .purchased-items-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+  
+  .shop-items-section h3,
+  .purchased-items-section h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 20px 0 10px;
+    font-size: 24px;
+  }
+  
+  .shop-item-card {
+    background-color: #2b2b2b;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .shop-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #76db17;
+  }
+  
+  .shop-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .shop-item-info h4 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .shop-item-info p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .point-cost {
+    font-weight: bold;
+    color: #76db17;
+  }
+  
+  .shop-item-info small {
+    color: #ccc;
+  }
+  
+  .shop-item-info button {
+    background-color: #76db17;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .shop-item-info button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .shop-item-info button:hover:not(:disabled) {
+    background-color: #5cb712;
+  }
+  
+  .error-message {
+    color: #d9534f;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }

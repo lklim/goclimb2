@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.admin-sidebar {
+    width: 220px;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #444;
+    box-sizing: border-box;
+}
+
+/* Main content area beside sidebar */
+.admin-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #646464;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.admin-logo {
+    height: 60px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-sidebar ul li {
+    margin-bottom: 5px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.admin-sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 500;
+}
+
+.admin-sidebar ul li:hover {
+    background-color: #444;
+}

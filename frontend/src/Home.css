@@ -1,0 +1,518 @@
+/* Background color */
+body {
+  background-color: #202123; /* Change this to any color you want */
+}
+
+/* Middle Stripe */
+.home-feed {
+  max-width: 700px;
+  align-items: center; /* Centers horizontally */
+  margin: 70px auto;
+  justify-content: center; /* Centers vertically */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: linear-gradient(to right, #00a896, #76db17);
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* Image */
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Caption */
+.caption {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ffffff; /* Color for caption */
+}
+
+.caption-box {
+  width: 100%;
+  background-color: #444; /* Dark background with transparency */
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  color: white; /* Text color */
+  padding: 10px; /* Add space inside the box */
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 5px; /* Space above */
+  width: fit-content; /* Adjust box size to content */
+  display: inline-block; /* Ensures box wraps around the text */
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.actions .like-button {
+  background: #76db17;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.actions .like-button:hover {
+  background: #5db713;
+}
+
+.actions .delete-button {
+  background: #ff4d4d;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.actions .delete-button:hover {
+  background: #d63c3c;
+}
+
+/* Comment */
+.comments-section {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.comments-section h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.comment {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.comments-section input[type="text"] {
+  width: calc(90% - 60px);
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.comments-section button {
+  margin-top: 6px;
+  margin-left: 8px;
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-content: left;
+}
+
+.comments-section button:hover {
+  background: #0056b3;
+}
+
+.post-username {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.poster-username {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comments-section button.view-more-comments {
+  background: #00a896;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.comments-section button.view-more-comments:hover {
+  background: #007b74;
+}
+
+.comment-username {
+  font-weight: bold;
+  color: #ccc;
+  margin-right: 5px;
+}
+
+.create-post {
+  background-color: #323334;
+  border: 1px solid #00a896;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.create-post h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.create-post textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.create-post input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.create-post button {
+  background-color: #76db17;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-post button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Create Post Section */
+.create-post-section {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #323334; /* Similar to individual posts */
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-section h2 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Box to enter caption and upload file */
+.create-post-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Caption input area */
+.create-caption {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #444;
+  color: white;
+  resize: none;
+}
+
+.create-caption:focus {
+  outline: none;
+  border-color: #76db17;
+}
+
+/* File input */
+.create-image-input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: white;
+  background-color: #444;
+}
+
+.create-image-input:hover {
+  cursor: pointer;
+  border-color: #76db17;
+}
+
+/* Post button */
+.create-post-button {
+  background-color: #76db17;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;
+}
+
+.create-post-button:hover {
+  background-color: #5db713;
+}
+
+/* Hover effect on posts */
+.post:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Higher contrast input borders */
+.create-caption,
+.create-image-input {
+  border: 1px solid #76db17;
+}
+
+/* Improve disabled button styling */
+.create-post-button:disabled {
+  background-color: #aaa;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-feed, .create-post-section {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  .comment-input-group {
+      flex-direction: column;
+      gap: 6px;
+  }
+
+  .comments-section input[type="text"] {
+      width: 100%;
+  }
+
+  .comments-section button {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #76db17;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202123;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.post {
+  background-color: #323334;
+  border: 1px solid #00a896;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Sort By Dropdown Button */
+.sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-container label {
+  font-weight: bold; /* Make the text bold */
+  color: white; /* Text color */
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.sort-container select {
+  background-color: #444;
+  color: white;
+  border: 1px solid #76db17; /* Match border color */
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  width: auto;
+}
+
+/* Hover effect for the dropdown button */
+.sort-container select:hover {
+  background-color: #333; /* Darker background on hover */
+  border-color: #5db713; /* Lighter border on hover */
+}
+
+/* Focused dropdown button */
+.sort-container select:focus {
+  outline: none;
+  border-color: #76db17; /* Same color as border */
+  background-color: #333; /* Dark background when focused */
+}
+
+/* Dropdown menu */
+.sort-container select option {
+  background-color: #444; /* Dark background for options */
+  color: white; /* Text color */
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.sort-container select option:hover {
+  background-color: #76db17; /* Green background on hover */
+  color: white; /* Keep text color white */
+}
+
+.follow-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.follow-button.following {
+  background-color: #ddd;
+}
+
+.tabs-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tab-button:not(.active) {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 14px;
+}
+
+.search-button, .clear-search-button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button:hover, .clear-search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

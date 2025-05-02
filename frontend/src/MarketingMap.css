@@ -1,0 +1,17 @@
+
+.marketing-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-area {
+  flex: 1;
+  position: relative;
+}
+
+/*  Leaflet map must have height + width */
+.marketing-map {
+  height: 100%;
+  width: 100%;
+}

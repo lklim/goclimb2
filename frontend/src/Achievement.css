@@ -1,0 +1,87 @@
+/* Achievements Page */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+/* Achievement Section */
+.achievement-section {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.achievement-card {
+  background-color: #2d2d2d;
+  border: 1px solid #00a896;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.achievement-info h4 {
+  margin: 0 0 5px;
+  color: #00a896;
+}
+
+.achievement-info p {
+  margin: 0 0 5px;
+  color: #ddd;
+}
+
+.achievement-info small {
+  color: #aaa;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #00a896;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #007e6e;
+}
+
+.tab.active {
+  background-color: #00a896;
+  color: black;
+}
+
+.progress-counter {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  font-weight: bold;
+}

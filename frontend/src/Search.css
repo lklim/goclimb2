@@ -1,0 +1,149 @@
+/* Overall page */
+.search-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-color: #1e1e1e;
+    overflow: hidden;
+}
+
+/* Main container for search inputs and results */
+.search-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #00a896, #76db17);
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 520px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: white;
+    color: black;
+}
+
+/* Input, Select and Button styles */
+.search-content input,
+.search-content button {
+    width: 100%;
+    max-width: 480px;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    background-color: white;
+    color: black;
+}
+
+.search-content select {
+    width: 100%;
+    max-width: 500px;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.search-content input:focus,
+.search-content select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.search-content input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Select dropdown */
+.search-content select {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Button style */
+.search-content button {
+    background-color: #0d9ef1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-content button:hover {
+    background-color: #45a049;
+}
+
+/* Heading */
+.search-page h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Crag list container */
+.search-page ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    color: #333;
+}
+
+/* Crag card item */
+.search-page li {
+    background-color: rgba(50, 51, 52, 0.95);
+    color: white;
+    margin: 12px 0;
+    padding: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-page li strong {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.search-page li p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: white;
+}
+
+/* Fallback message */
+.search-page p {
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Details link */
+.view-details-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.view-details-link:hover {
+    color: #388e3c;
+}

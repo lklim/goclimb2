@@ -1,0 +1,212 @@
+* { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #333; }
+
+/* --------------------------Navbar---------------------- */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* bigger and natural */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.feature-image-wrapper {
+  flex: 0 0 500px; 
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain; /* CONTAIN so image is NOT CUT OFF */
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+  
+  /* Image hover effect for smoother interaction */
+  .feature-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  }
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* ------------------------------------------Overlay----------------------------------- */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    z-index: 5;
+}
+
+.overlay h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.overlay-buttons button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.overlay-buttons button:first-child {
+    background: white;
+    color: rgb(23, 109, 207);
+}
+
+.overlay-buttons button:last-child {
+    background: rgb(23, 109, 207);
+    color: white;
+}
+
+/* ----------------------Video Section --------------------- */
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 50px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.promo-video {
+    width: 500px;
+    max-width: 90vw;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.video-description {
+    max-width: 500px;
+    text-align: left;
+}
+
+.video-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.video-description p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------Features--------------------------------------*/
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px 25px 70px 25px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.feature-box h3 {
+    color: rgb(23, 109, 207);
+}
+
+.feature-box p {
+    color: #423f3f;
+}
+  
+.feature-text {
+    max-width: 500px;
+    color: white;
+    text-align: left;
+}
+
+.feature-text h3 {
+    color: #00ffcc;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* -----------------------------------------------Contact section----------------------------------- */
+.contact-container {
+    background-color: #5a5757;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-container button {
+    background: rgb(23, 109, 207);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background: #0056b3;
+}
+
+/* -----------------------Footer --------------------*/
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+}

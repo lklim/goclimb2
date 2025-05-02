@@ -1,0 +1,188 @@
+/* Set base styles for body and center the main container */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e; /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper container */
+.container {
+  background: linear-gradient(135deg, #029688, #66cc33); /* green gradient */
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header .logo {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Section titles*/
+h3 {
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Input search field */
+.search input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+/*--------------------------------------Workout Cards------------------------------------- */
+.workout-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.workout-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.workout-card .content {
+  flex-grow: 1;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Color difficulty levels */
+.beginner { background-color: green; }
+.intermediate { background-color: orange; }
+.expert { background-color: red; }
+
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 70%; /* default value, override with inline style in JSX */
+}
+
+/* Description toggled */
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+/*--------------------------------------Banner--------------------------------------*/
+.banner {
+  margin: 20px 0;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+.banner-text h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.banner-text a {
+  color: #b4ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  .banner button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #b4ff00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+/* ---------------- Date Bar Styling -------------------- */
+.date-bar h3 {
+  margin-top: 10px; 
+}
+
+.dates {
+  display: flex;
+  gap: 10px; 
+  margin-top: 10px;
+  margin-bottom: 20px; 
+}
+
+.dates span {
+  background-color: #b4ff00; /* Bright green background for date pills */
+  padding: 8px;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 12px;
+  text-align: center;
+  width: 40px;
+  cursor: pointer; /* Clickable dates */
+  color: black;
+}
+
+.dates .active {
+  background-color: #1c1c1c; /* Dark background for selected date */
+  color: white;
+}

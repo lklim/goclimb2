@@ -1,0 +1,53 @@
+/* === Navbar Container === */
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #323334;
+    padding: 5px 15px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* === Left Section (Logo + Title) === */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar h1 {
+    color: #76db17;
+    font-size: 24px;
+    margin: 0;
+}
+
+/* === Right Section (Links + Profile) === */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 7px;
+}
+
+/* Navigation Links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    color: #76db17;
+}

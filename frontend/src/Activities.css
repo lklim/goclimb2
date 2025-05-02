@@ -1,0 +1,75 @@
+/* Activities Page */
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background-color: #1e1e1e;
+    overflow: hidden;
+  }
+  
+  .activities-section {
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* Tab buttons */
+  .edit-profile-btn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #00a896;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #007e6e;
+  }
+  
+  /* Activity Card */
+  .activity-card {
+    background-color: #252525;
+    border: 1px solid #f4a261;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  /* Shared image styling */
+  .activity-card .achievement-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  /* Activity info */
+  .activity-info h4 {
+    margin: 0 0 5px;
+    color: #f4a261;
+  }
+  
+  .activity-info p {
+    margin: 0 0 5px;
+    color: #ddd;
+  }
+  
+  .activity-info small {
+    color: #888;
+  }
+  
+  .progress-counter {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    font-weight: bold;
+}
