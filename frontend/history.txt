@@ -1,0 +1,38 @@
+dir
+npm i
+npm start dev
+npm run dev
+npm run
+dir
+cd frontend
+dir
+npm i
+npm run
+npm run dev
+npm i @vitejs/plugin-react-swc
+npm run dev
+y
+npm i @rollup/rollup-linux-x64-gnu
+npm install @rollup/rollup-linux-x64-gnu --save-optional
+npm run dev
+y
+npm run dev
+y
+npm run dev
+y
+npm run dev
+y
+npm start
+npm run build
+npm start
+npm run start
+npm run
+node start
+npm run preview
+y
+npm run dev
+y
+npm run dev
+y
+npm run devdoskey /history > history.txt
+doskey /history > history.txt

@@ -3,6 +3,7 @@ import supabase from "./supabaseClient";
 import emailjs from "@emailjs/browser";
 import Navbar from "./components/Navbar";
 // import "./Sos.css";
+import "./SOS.css";
 
 function Sos() {
   const [userLocation, setUserLocation] = useState(null);
